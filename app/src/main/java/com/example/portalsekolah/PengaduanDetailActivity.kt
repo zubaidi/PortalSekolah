@@ -15,8 +15,6 @@ class PengaduanDetailActivity : AppCompatActivity() {
         val kembali = findViewById<ImageView>(R.id.tombolKembali)
         kembali.setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))
-            var home = HomeActivity()
-            home.replaceFragment(PengaduanFragment)
         }
     }
 }
