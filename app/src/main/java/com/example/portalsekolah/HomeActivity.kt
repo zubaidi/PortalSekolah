@@ -30,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
             true
         }
     }
-    private fun replaceFragment(fragment: Fragment) {
+    fun replaceFragment(fragment: Fragment) {
         if(fragment!=null){
             val nav=supportFragmentManager.beginTransaction()
                 .replace(R.id.frameContainer, fragment)

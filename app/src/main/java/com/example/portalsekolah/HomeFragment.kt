@@ -36,8 +36,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val imageLogout = view?.findViewById<ImageView>(R.id.moreLogout)
         imageLogout?.setOnClickListener {
-            val popupMenu =
-                activity?.let { it1 -> androidx.appcompat.widget.PopupMenu(it1, imageLogout) }
+            val popupMenu = activity?.let { it1 -> androidx.appcompat.widget.PopupMenu(it1, imageLogout) }
             popupMenu?.menuInflater?.inflate(R.menu.logout_menu, popupMenu.menu)
             popupMenu?.setOnMenuItemClickListener(
                 androidx.appcompat.widget.PopupMenu.OnMenuItemClickListener {
