@@ -42,7 +42,9 @@ class HomeFragment : Fragment() {
                 androidx.appcompat.widget.PopupMenu.OnMenuItemClickListener {
                     item: MenuItem? -> when(item?.itemId){
                         R.id.logout_menu -> requireActivity().run {
-                            startActivity(Intent(this, LoginActivity::class.java))
+                            val intent = Intent(this, LoginActivity::class.java)
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+                            startActivity(intent)
                             finish()
                         }
                     }

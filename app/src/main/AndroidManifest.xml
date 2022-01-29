@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PortalSekolah">
         <activity
+            android:name=".TambahPengaduanActivity"
+            android:exported="false" />
+        <activity
             android:name=".PengaduanDetailActivity"
             android:exported="false" />
         <activity

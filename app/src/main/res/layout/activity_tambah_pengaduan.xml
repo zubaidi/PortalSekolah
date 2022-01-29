@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahPengaduanActivity">
+
+    <TextView
+        android:id="@+id/formPengaduan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Form Pengaduan"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/LabelNamaPengirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Nama Pengirim"
+        android:textColor="#000"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/formPengaduan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/editNamaPengirim"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_kotak_input"
+        android:textColor="#000"
+        android:textAlignment="textStart"
+        android:textSize="12dp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/LabelNamaPengirim"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/LabelEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Email"
+        android:textColor="#000"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editNamaPengirim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/editEmailPengirim"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_kotak_input"
+        android:textColor="#000"
+        android:textAlignment="textStart"
+        android:textSize="12dp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/LabelEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/LabelNoTelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Nomor Telfon / WA"
+        android:textColor="#000"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editEmailPengirim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/editNoTelp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_kotak_input"
+        android:textColor="#000"
+        android:textAlignment="textStart"
+        android:textSize="12dp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/LabelNoTelp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/LabelInfoPengaduan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Informasi Pengaduan"
+        android:textColor="#000"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editNoTelp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/editPengaduan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_kotak_input"
+        android:textColor="#000"
+        android:textAlignment="textStart"
+        android:textSize="12dp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/LabelInfoPengaduan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/LabelTambahPengaduan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Informasi Pengaduan"
+        android:textColor="#000"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editPengaduan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/attachFile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_attach_foreground"
+        app:layout_constraintTop_toBottomOf="@+id/LabelTambahPengaduan"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
+import com.google.android.material.textfield.TextInputLayout
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var login : TextView
@@ -25,8 +27,13 @@ class LoginActivity : AppCompatActivity() {
             }else if(password.text.toString().length == 0){
                 password.setError("Password tidak sesuai")
             }else{
-                if(login.text.toString().equals("Admin") && password.text.toString().equals("Admin"))
+                val user = username.text.toString()
+                val pass = password.text.toString()
+                if(user.equals("Admin") && pass.equals("Admin")) {
                     startActivity(Intent(this, HomeActivity::class.java))
+                }else{
+                    Toast.makeText(this, "Username atau Password Tidak Sesuai", Toast.LENGTH_LONG).show()
+                }
             }
         }
         login.setOnClickListener {
